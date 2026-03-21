@@ -23,3 +23,15 @@ def manhattan_distance(state, goal_state=(1, 2, 3, 4, 5, 6, 7, 8, 0)):
         distance += abs(current_row - goal_row) + abs(current_col - goal_col)
 
     return distance
+
+def print_board(state):
+    """
+    Prints the 1D tuple state as a formatted 3x3 grid.
+    Replaces the '0' with a blank space for better readability.
+    """
+    print("-------------")
+    for i in range(0, 9, 3):
+        # Grab the row and replace 0 with a space
+        row = [' ' if x == 0 else str(x) for x in state[i:i+3]]
+        print(f"| {row[0]} | {row[1]} | {row[2]} |")
+        print("-------------")
