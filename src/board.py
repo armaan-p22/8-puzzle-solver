@@ -77,3 +77,5 @@ class Node:
                     g_cost=self.g_cost + 1 # The path cost increases by 1 per move
                 )
                 children.append(child_node)
+        
+        return children
