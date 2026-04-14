@@ -1,2 +1,2 @@
 ## System Architecture
-![System Architecture](docs/architecture_diagram.png)
+![System Architecture](docs/Architecture_Diagram.png)
